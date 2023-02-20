@@ -1,0 +1,35 @@
+{
+	"name": "eliashaeussler/renovate-config",
+	"description": "My personal configuration for Renovate",
+	"license": "GPL-3.0-or-later",
+	"type": "library",
+	"authors": [
+		{
+			"name": "Elias Häußler",
+			"email": "elias@haeussler.dev",
+			"homepage": "https://haeussler.dev",
+			"role": "Maintainer"
+		}
+	],
+	"require-dev": {
+		"armin/editorconfig-cli": "^1.5",
+		"ergebnis/composer-normalize": "^2.29"
+	},
+	"config": {
+		"allow-plugins": {
+			"ergebnis/composer-normalize": true
+		},
+		"sort-packages": true
+	},
+	"scripts": {
+		"lint": [
+			"@lint:composer:fix",
+			"@lint:editorconfig:fix"
+		],
+		"lint:composer": "@lint:composer:fix --dry-run",
+		"lint:composer:fix": "@composer normalize",
+		"lint:editorconfig": "ec",
+		"lint:editorconfig:fix": "@lint:editorconfig --fix",
+		"validate-config": "docker-compose run --rm validate"
+	}
+}

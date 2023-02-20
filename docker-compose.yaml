@@ -1,0 +1,6 @@
+services:
+  validate:
+    image: renovate/renovate:slim
+    command: ['renovate-config-validator', 'default.json']
+    volumes:
+      - ./:/usr/src/app

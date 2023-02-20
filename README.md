@@ -1,0 +1,35 @@
+<div align="center">
+
+# Renovate config
+
+[![CGL](https://github.com/eliashaeussler/renovate-config/actions/workflows/cgl.yaml/badge.svg)](https://github.com/eliashaeussler/renovate-config/actions/workflows/cgl.yaml)
+[![Release](https://github.com/eliashaeussler/renovate-config/actions/workflows/release.yaml/badge.svg)](https://github.com/eliashaeussler/renovate-config/actions/workflows/release.yaml)
+[![Latest Stable Version](http://poser.pugx.org/eliashaeussler/renovate-config/v)](https://packagist.org/packages/eliashaeussler/renovate-config)
+[![License](http://poser.pugx.org/eliashaeussler/renovate-config/license)](LICENSE)
+
+</div>
+
+This package contains basic [Renovate](https://docs.renovatebot.com/) config for
+use in my personal projects. It is not meant to be used anywhere else. I won't
+provide support and don't accept pull requests for this repo.
+
+## 🚢 Config presets
+
+* [`default.json`](default.json) *– base configuration for all projects*
+
+## ⚡ Usage
+
+Add this to your `renovate.json`:
+
+```json
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "github>eliashaeussler/renovate-config"
+    ]
+}
+```
+
+## ⭐ License
+
+This project is licensed under [GNU General Public License 3.0 (or later)](LICENSE).
