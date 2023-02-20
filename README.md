@@ -4,8 +4,7 @@
 
 [![CGL](https://github.com/eliashaeussler/renovate-config/actions/workflows/cgl.yaml/badge.svg)](https://github.com/eliashaeussler/renovate-config/actions/workflows/cgl.yaml)
 [![Release](https://github.com/eliashaeussler/renovate-config/actions/workflows/release.yaml/badge.svg)](https://github.com/eliashaeussler/renovate-config/actions/workflows/release.yaml)
-[![Latest Stable Version](http://poser.pugx.org/eliashaeussler/renovate-config/v)](https://packagist.org/packages/eliashaeussler/renovate-config)
-[![License](http://poser.pugx.org/eliashaeussler/renovate-config/license)](LICENSE)
+[![License](https://img.shields.io/github/license/eliashaeussler/renovate-config)](LICENSE)
 
 </div>
 
