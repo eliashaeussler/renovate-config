@@ -22,10 +22,10 @@
 	"composerIgnorePlatformReqs": null,
 	"lockFileMaintenance": {
 		"enabled": true,
-		"commitMessageAction": "Update all dependencies",
-		"schedule": [
-			"daily"
-		]
+		"extends": [
+			":schedule:daily"
+		],
+		"commitMessageAction": "Update all dependencies"
 	},
 	"packageRules": [
 		{
