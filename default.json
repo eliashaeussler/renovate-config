@@ -46,6 +46,7 @@
 	],
 	"platformAutomerge": true,
 	"prConcurrentLimit": 10,
+	"rangeStrategy": "update-lockfile",
 	"vulnerabilityAlerts": {
 		"extends": [
 			":automergeDisabled"
