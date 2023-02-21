@@ -21,7 +21,7 @@
 	"commitMessageTopic": "{{depName}}",
 	"composerIgnorePlatformReqs": null,
 	"lockFileMaintenance": {
-		"enabled": true,
+		"enabled": false,
 		"commitMessageAction": "Update all dependencies"
 	},
 	"packageRules": [
