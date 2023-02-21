@@ -8,7 +8,7 @@
 		":dependencyDashboard",
 		":enableVulnerabilityAlertsWithLabel(security)",
 		":ignoreModulesAndTests",
-		":label(renovate)",
+		":label(dependencies)",
 		":prConcurrentLimit10",
 		":prHourlyLimit2",
 		":rebaseStalePrs",
