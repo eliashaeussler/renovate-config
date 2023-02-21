@@ -23,7 +23,7 @@
 	"lockFileMaintenance": {
 		"enabled": true,
 		"extends": [
-			":schedule:daily"
+			"schedule:daily"
 		],
 		"commitMessageAction": "Update all dependencies"
 	},
