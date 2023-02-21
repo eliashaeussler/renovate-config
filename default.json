@@ -13,8 +13,7 @@
 		":rebaseStalePrs",
 		":semanticCommitsDisabled",
 		":separateMajorReleases",
-		"group:recommended",
-		"schedule:weekdays"
+		"group:recommended"
 	],
 	"commitBodyTable": true,
 	"commitMessagePrefix": "[TASK]",
