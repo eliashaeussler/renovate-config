@@ -1,27 +1,52 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
-		"config:base",
-		"schedule:weekdays",
-		":automergeRequireAllStatusChecks"
+		":autodetectRangeStrategy",
+		":automergeMinor",
+		":automergeRequireAllStatusChecks",
+		":combinePatchMinorReleases",
+		":dependencyDashboard",
+		":enableVulnerabilityAlertsWithLabel(security)",
+		":ignoreModulesAndTests",
+		":label(renovate)",
+		":prConcurrentLimit10",
+		":rebaseStalePrs",
+		":semanticCommitsDisabled",
+		":separateMajorReleases",
+		"group:recommended",
+		"schedule:weekdays"
 	],
+	"commitBodyTable": true,
 	"commitMessagePrefix": "[TASK]",
 	"commitMessageTopic": "{{depName}}",
-	"labels": [
-		"dependencies"
-	],
+	"composerIgnorePlatformReqs": null,
 	"lockFileMaintenance": {
 		"enabled": true,
 		"commitMessageAction": "Update all dependencies"
 	},
 	"packageRules": [
 		{
-			"matchUpdateTypes": [
-				"minor",
-				"patch"
+			"matchDepTypes": [
+				"require"
 			],
-			"automerge": true
+			"rangeStrategy": "widen"
+		},
+		{
+			"extends": [
+				":automergeDisabled"
+			],
+			"ignoreUnstable": false,
+			"matchPackageNames": [
+				"php"
+			]
 		}
 	],
-	"prConcurrentLimit": 10
+	"platformAutomerge": true,
+	"prConcurrentLimit": 10,
+	"vulnerabilityAlerts": {
+		"extends": [
+			":automergeDisabled"
+		],
+		"rangeStrategy": "replace"
+	}
 }
