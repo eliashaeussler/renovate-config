@@ -4,7 +4,6 @@
 		":autodetectRangeStrategy",
 		":automergeBranch",
 		":automergeMinor",
-		":automergeRequireAllStatusChecks",
 		":combinePatchMinorReleases",
 		":dependencyDashboard",
 		":enableVulnerabilityAlertsWithLabel(security)",
