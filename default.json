@@ -16,6 +16,9 @@
 		":separateMajorReleases",
 		"group:recommended"
 	],
+	"assignees": [
+		"eliashaeussler"
+	],
 	"commitBodyTable": true,
 	"commitMessagePrefix": "[TASK]",
 	"commitMessageTopic": "{{depName}}",
