@@ -23,6 +23,7 @@
 	"commitMessagePrefix": "[TASK]",
 	"commitMessageTopic": "{{depName}}",
 	"composerIgnorePlatformReqs": null,
+	"configMigration": true,
 	"lockFileMaintenance": {
 		"enabled": true,
 		"extends": [
