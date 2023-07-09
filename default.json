@@ -9,8 +9,6 @@
 		":enableVulnerabilityAlertsWithLabel(security)",
 		":ignoreModulesAndTests",
 		":label(dependencies)",
-		":prConcurrentLimit10",
-		":prHourlyLimit2",
 		":rebaseStalePrs",
 		":semanticCommitsDisabled",
 		":separateMajorReleases",
@@ -45,7 +43,6 @@
 		}
 	],
 	"platformAutomerge": true,
-	"prConcurrentLimit": 10,
 	"rangeStrategy": "update-lockfile",
 	"vulnerabilityAlerts": {
 		"extends": [
