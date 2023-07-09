@@ -34,12 +34,6 @@
 	},
 	"packageRules": [
 		{
-			"matchDepTypes": [
-				"require"
-			],
-			"rangeStrategy": "widen"
-		},
-		{
 			"extends": [
 				":automergeDisabled"
 			],
