@@ -1,0 +1,39 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"local>eliashaeussler/renovate-config"
+	],
+	"composerIgnorePlatformReqs": [
+		"ext-intl"
+	],
+	"packageRules": [
+		{
+			"description": "Widen all production dependencies",
+			"matchDepTypes": [
+				"require"
+			],
+			"rangeStrategy": "widen"
+		},
+		{
+			"description": "Disable automerge for PHP dependency updates in TER libraries",
+			"extends": [
+				":automergeDisabled"
+			],
+			"matchDepNames": [
+				"php"
+			],
+			"matchFileNames": [
+				"Resources/Private/Libs/Build/composer.json"
+			]
+		},
+		{
+			"description": "Disable Renovate for all fixture extensions used in functional tests",
+			"extends": [
+				":disableRenovate"
+			],
+			"matchFileNames": [
+				"Tests/Functional/Fixtures/Extensions/**"
+			]
+		}
+	]
+}
