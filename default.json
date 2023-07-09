@@ -34,6 +34,7 @@
 	},
 	"packageRules": [
 		{
+			"description": "Disable automerge for PHP dependency updates",
 			"extends": [
 				":automergeDisabled"
 			],

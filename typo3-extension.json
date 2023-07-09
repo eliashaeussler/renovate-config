@@ -15,18 +15,6 @@
 			"rangeStrategy": "widen"
 		},
 		{
-			"description": "Disable automerge for PHP dependency updates in TER libraries",
-			"extends": [
-				":automergeDisabled"
-			],
-			"matchDepNames": [
-				"php"
-			],
-			"matchFileNames": [
-				"Resources/Private/Libs/Build/composer.json"
-			]
-		},
-		{
 			"description": "Disable Renovate for all fixture extensions used in functional tests",
 			"extends": [
 				":disableRenovate"
