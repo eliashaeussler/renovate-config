@@ -1,7 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
-		":autodetectRangeStrategy",
 		":automergeBranch",
 		":automergeMinor",
 		":combinePatchMinorReleases",
@@ -43,7 +42,6 @@
 		}
 	],
 	"platformAutomerge": true,
-	"rangeStrategy": "update-lockfile",
 	"vulnerabilityAlerts": {
 		"extends": [
 			":automergeDisabled",
