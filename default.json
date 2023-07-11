@@ -31,14 +31,15 @@
 	},
 	"packageRules": [
 		{
-			"description": "Disable automerge for PHP dependency updates",
+			"description": "Handle PHP requirement specifically",
 			"extends": [
 				":automergeDisabled"
 			],
 			"ignoreUnstable": false,
 			"matchPackageNames": [
 				"php"
-			]
+			],
+			"rangeStrategy": "widen"
 		}
 	],
 	"platformAutomerge": true,
