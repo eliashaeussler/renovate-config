@@ -15,6 +15,7 @@ provide support and don't accept pull requests for this repo.
 ## 🚢 Config presets
 
 * [`default.json`](default.json) *– base configuration for all projects*
+* [`deployer.json`](deployer.json) *– configuration for projects using [Deployer](https://deployer.org/)*
 * [`typo3-extension.json`](typo3-extension.json) *– configuration for [TYPO3 CMS](https://typo3.org/) extensions*
 
 ## ⚡ Usage

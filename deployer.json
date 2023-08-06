@@ -1,0 +1,25 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"customDatasources": {
+		"deployer": {
+			"defaultRegistryUrlTemplate": "https://deployer.org/manifest.json",
+			"format": "json",
+			"transformTemplates": [
+				"{\"releases\": $map($, function($v) { {\"version\": $v.version} }), \"sourceUrl\": \"https://github.com/deployphp/deployer\", \"homepage\": \"https://deployer.org/\"}"
+			]
+		}
+	},
+	"regexManagers": [
+		{
+			"fileMatch": [
+				"^\\.github/workflows/deploy\\.yaml$"
+			],
+			"matchStrings": [
+				"deployer-version: '(?<currentValue>[^']+)'"
+			],
+			"datasourceTemplate": "custom.deployer",
+			"depNameTemplate": "deployer",
+			"versioningTemplate": "composer"
+		}
+	]
+}
