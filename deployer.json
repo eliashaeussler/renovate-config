@@ -11,6 +11,7 @@
 	},
 	"regexManagers": [
 		{
+			"customType": "regex",
 			"fileMatch": [
 				"^\\.github/workflows/deploy\\.yaml$"
 			],
