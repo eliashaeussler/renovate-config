@@ -22,6 +22,7 @@
 	"commitMessageTopic": "{{depName}}",
 	"composerIgnorePlatformReqs": null,
 	"configMigration": true,
+	"dependencyDashboardOSVVulnerabilitySummary": "unresolved",
 	"lockFileMaintenance": {
 		"enabled": true,
 		"extends": [
@@ -29,6 +30,7 @@
 		],
 		"commitMessageAction": "Update all dependencies"
 	},
+	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
 			"description": "Handle PHP requirement specifically",
