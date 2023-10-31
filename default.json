@@ -41,12 +41,6 @@
 				"php"
 			],
 			"rangeStrategy": "widen"
-		},
-		{
-			"description": "Include packages from E2E test suites",
-			"matchFileNames": [
-				"tests/e2e/**"
-			]
 		}
 	],
 	"platformAutomerge": true,
