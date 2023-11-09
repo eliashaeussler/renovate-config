@@ -22,6 +22,20 @@
 	"commitMessageTopic": "{{depName}}",
 	"composerIgnorePlatformReqs": null,
 	"configMigration": true,
+	"customManagers": [
+		{
+			"customType": "regex",
+			"fileMatch": [
+				"^\\.github/workflows/.+\\.yaml$"
+			],
+			"matchStrings": [
+				"php-version: '?(?<currentValue>\\d\\.\\d\\S*)'?"
+			],
+			"datasourceTemplate": "packagist",
+			"depNameTemplate": "php",
+			"versioningTemplate": "composer"
+		}
+	],
 	"lockFileMaintenance": {
 		"enabled": true,
 		"extends": [
