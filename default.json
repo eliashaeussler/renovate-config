@@ -31,7 +31,7 @@
 			"matchStrings": [
 				"php-version: '?(?<currentValue>\\d\\.\\d\\S*)'?"
 			],
-			"datasourceTemplate": "packagist",
+			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php",
 			"versioningTemplate": "composer"
 		}
