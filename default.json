@@ -33,6 +33,7 @@
 			],
 			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php",
+			"packageNameTemplate": "containerbase/php-prebuild",
 			"versioningTemplate": "composer"
 		}
 	],
@@ -52,7 +53,8 @@
 			],
 			"ignoreUnstable": false,
 			"matchPackageNames": [
-				"php"
+				"php",
+				"containerbase/php-prebuild"
 			],
 			"rangeStrategy": "widen"
 		}
