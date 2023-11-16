@@ -50,6 +50,9 @@
 			"extends": [
 				":automergeDisabled"
 			],
+			"excludePackageNames": [
+				"containerbase/php-prebuild"
+			],
 			"ignoreUnstable": false,
 			"matchPackageNames": [
 				"php"
@@ -61,31 +64,14 @@
 			"extends": [
 				":automergeMinor"
 			],
-			"matchManagers": [
-				"regex"
-			],
 			"matchFileNames": [
 				".github/workflows/**"
 			],
-			"matchPackageNames": [
-				"php",
-				"containerbase/php-prebuild"
-			]
-		},
-		{
-			"description": "Disable automerge for PHP version updates in GitHub release workflow",
-			"extends": [
-				":automergeDisabled"
-			],
 			"matchManagers": [
 				"regex"
 			],
-			"matchFileNames": [
-				".github/workflows/release.yaml"
-			],
-			"matchPackageNames": [
-				"php",
-				"containerbase/php-prebuild"
+			"matchDepNames": [
+				"php"
 			]
 		}
 	],

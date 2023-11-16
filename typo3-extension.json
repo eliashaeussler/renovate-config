@@ -19,6 +19,21 @@
 			"matchFileNames": [
 				"Tests/Functional/Fixtures/Extensions/**"
 			]
+		},
+		{
+			"description": "Disable automerge for PHP version updates in GitHub release workflow",
+			"extends": [
+				":automergeDisabled"
+			],
+			"matchFileNames": [
+				".github/workflows/release.yaml"
+			],
+			"matchManagers": [
+				"regex"
+			],
+			"matchDepNames": [
+				"php"
+			]
 		}
 	]
 }
