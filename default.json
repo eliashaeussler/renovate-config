@@ -33,8 +33,7 @@
 			],
 			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php",
-			"packageNameTemplate": "containerbase/php-prebuild",
-			"versioningTemplate": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)"
+			"packageNameTemplate": "containerbase/php-prebuild"
 		}
 	],
 	"lockFileMaintenance": {
