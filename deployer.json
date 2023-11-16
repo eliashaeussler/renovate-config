@@ -22,5 +22,23 @@
 			"depNameTemplate": "deployer",
 			"versioningTemplate": "composer"
 		}
+	],
+	"packageRules": [
+		{
+			"description": "Disable automerge for PHP version updates in GitHub deploy workflow",
+			"extends": [
+				":automergeDisabled"
+			],
+			"commitMessageTopic": "{{{depName}}}",
+			"matchFileNames": [
+				".github/workflows/deploy.yaml"
+			],
+			"matchManagers": [
+				"regex"
+			],
+			"matchDepNames": [
+				"php"
+			]
+		}
 	]
 }
