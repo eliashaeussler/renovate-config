@@ -58,21 +58,16 @@
 			"rangeStrategy": "widen"
 		},
 		{
-			"description": "Disable patch updates for PHP",
-			"extends": [
-				":disableRenovate"
-			],
+			"description": "Replace PHP version in GitHub workflows",
 			"matchManagers": [
 				"regex"
 			],
-			"matchDepNames": [
-				"php"
+			"matchFileNames": [
+				".github/workflows/**"
 			],
 			"matchPackageNames": [
+				"php",
 				"containerbase/php-prebuild"
-			],
-			"matchUpdateTypes": [
-				"patch"
 			],
 			"rangeStrategy": "replace"
 		}
