@@ -73,7 +73,8 @@
 			],
 			"matchUpdateTypes": [
 				"patch"
-			]
+			],
+			"rangeStrategy": "replace"
 		}
 	],
 	"platformAutomerge": true,
