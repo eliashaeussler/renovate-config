@@ -50,9 +50,6 @@
 			"extends": [
 				":automergeDisabled"
 			],
-			"excludePackageNames": [
-				"containerbase/php-prebuild"
-			],
 			"ignoreUnstable": false,
 			"matchPackageNames": [
 				"php"
