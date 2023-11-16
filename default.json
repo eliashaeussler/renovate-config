@@ -56,6 +56,24 @@
 				"containerbase/php-prebuild"
 			],
 			"rangeStrategy": "widen"
+		},
+		{
+			"description": "Disable patch updates for PHP",
+			"extends": [
+				":disableRenovate"
+			],
+			"matchManagers": [
+				"regex"
+			],
+			"matchDepNames": [
+				"php"
+			],
+			"matchPackageNames": [
+				"containerbase/php-prebuild"
+			],
+			"matchUpdateTypes": [
+				"patch"
+			]
 		}
 	],
 	"platformAutomerge": true,
