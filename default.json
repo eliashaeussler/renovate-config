@@ -31,9 +31,9 @@
 			"matchStrings": [
 				"php-version: '?(?<currentValue>\\d\\.\\d\\S*)'?"
 			],
-			"datasourceTemplate": "github-tags",
+			"datasourceTemplate": "docker",
 			"depNameTemplate": "php",
-			"packageNameTemplate": "containerbase/php-prebuild"
+			"versioningTemplate": "docker"
 		}
 	],
 	"lockFileMaintenance": {
