@@ -29,7 +29,6 @@
 			"extends": [
 				":automergeDisabled"
 			],
-			"commitMessageTopic": "{{{depName}}}",
 			"matchFileNames": [
 				".github/workflows/deploy.yaml"
 			],

@@ -51,16 +51,16 @@
 				":automergeDisabled"
 			],
 			"ignoreUnstable": false,
+			"matchManagers": [
+				"composer"
+			],
 			"matchPackageNames": [
 				"php"
 			],
 			"rangeStrategy": "widen"
 		},
 		{
-			"description": "Automerge PHP version updates in GitHub workflows",
-			"extends": [
-				":automergeMinor"
-			],
+			"description": "Override commit message for PHP version updates in GitHub workflows",
 			"commitMessageTopic": "{{{depName}}}",
 			"matchFileNames": [
 				".github/workflows/**"
