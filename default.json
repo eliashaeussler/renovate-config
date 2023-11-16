@@ -25,15 +25,14 @@
 	"customManagers": [
 		{
 			"customType": "regex",
-			"autoReplaceStringTemplate": "php-version: '{{{newMajor}}}.{{{newMinor}}}'",
-			"datasourceTemplate": "github-tags",
-			"depNameTemplate": "php",
 			"fileMatch": [
 				"^\\.github/workflows/.+\\.yaml$"
 			],
 			"matchStrings": [
-				"php-version: '?(?<currentValue>\\d\\.\\d)'?"
+				"php-version: '?(?<currentValue>\\d\\.\\d\\S*)'?"
 			],
+			"datasourceTemplate": "github-tags",
+			"depNameTemplate": "php",
 			"packageNameTemplate": "containerbase/php-prebuild"
 		}
 	],
@@ -59,6 +58,21 @@
 				"php"
 			],
 			"rangeStrategy": "widen"
+		},
+		{
+			"description": "Automerge PHP version updates in GitHub workflows",
+			"extends": [
+				":automergeMinor"
+			],
+			"matchFileNames": [
+				".github/workflows/**"
+			],
+			"matchManagers": [
+				"regex"
+			],
+			"matchDepNames": [
+				"php"
+			]
 		}
 	],
 	"platformAutomerge": true,
