@@ -25,6 +25,7 @@
 			"extends": [
 				":automergeDisabled"
 			],
+			"commitMessageTopic": "{{{depName}}}",
 			"matchFileNames": [
 				".github/workflows/release.yaml"
 			],

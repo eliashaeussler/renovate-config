@@ -64,6 +64,7 @@
 			"extends": [
 				":automergeMinor"
 			],
+			"commitMessageTopic": "{{{depName}}}",
 			"matchFileNames": [
 				".github/workflows/**"
 			],
