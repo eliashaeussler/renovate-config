@@ -52,13 +52,15 @@
 			],
 			"ignoreUnstable": false,
 			"matchPackageNames": [
-				"php",
-				"containerbase/php-prebuild"
+				"php"
 			],
 			"rangeStrategy": "widen"
 		},
 		{
-			"description": "Replace PHP version in GitHub workflows",
+			"description": "Automerge PHP version updates in GitHub workflows",
+			"extends": [
+				":automergeMinor"
+			],
 			"matchManagers": [
 				"regex"
 			],
@@ -68,8 +70,23 @@
 			"matchPackageNames": [
 				"php",
 				"containerbase/php-prebuild"
+			]
+		},
+		{
+			"description": "Disable automerge for PHP version updates in GitHub release workflow",
+			"extends": [
+				":automergeDisabled"
 			],
-			"rangeStrategy": "replace"
+			"matchManagers": [
+				"regex"
+			],
+			"matchFileNames": [
+				".github/workflows/release.yaml"
+			],
+			"matchPackageNames": [
+				"php",
+				"containerbase/php-prebuild"
+			]
 		}
 	],
 	"platformAutomerge": true,
