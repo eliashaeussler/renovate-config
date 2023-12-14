@@ -44,7 +44,6 @@
 		],
 		"commitMessageAction": "Update all dependencies"
 	},
-	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
 			"description": "Handle PHP requirement specifically",
