@@ -70,6 +70,14 @@
 			"matchDepNames": [
 				"php"
 			]
+		},
+		{
+			"description": "Group GitHub artifact actions",
+			"matchDepNames": [
+				"actions/download-artifact",
+				"actions/upload-artifact"
+			],
+			"groupName": "GitHub artifact actions"
 		}
 	],
 	"platformAutomerge": true,
