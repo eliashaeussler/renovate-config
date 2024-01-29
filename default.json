@@ -36,6 +36,7 @@
 			"versioningTemplate": "docker"
 		}
 	],
+	"dependencyDashboardOSVVulnerabilitySummary": "unresolved",
 	"lockFileMaintenance": {
 		"enabled": true,
 		"extends": [
@@ -43,6 +44,7 @@
 		],
 		"commitMessageAction": "Update all dependencies"
 	},
+	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
 			"description": "Handle PHP requirement specifically",
