@@ -36,6 +36,7 @@
 			"versioningTemplate": "docker"
 		}
 	],
+	"dependencyDashboardOSVVulnerabilitySummary": "unresolved",
 	"lockFileMaintenance": {
 		"enabled": true,
 		"extends": [
