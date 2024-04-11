@@ -11,7 +11,9 @@
 		":rebaseStalePrs",
 		":semanticCommitsDisabled",
 		":separateMajorReleases",
-		"group:recommended"
+		"group:recommended",
+		"packages:eslint",
+		"packages:stylelint"
 	],
 	"assignees": [
 		"eliashaeussler"
@@ -80,18 +82,6 @@
 				"actions/upload-artifact"
 			],
 			"groupName": "GitHub artifact actions"
-		},
-		{
-			"description": "Group stylelint packages",
-			"matchPackagePrefixes": [
-				"stylelint"
-			]
-		},
-		{
-			"description": "Group ESLint packages",
-			"matchPackagePrefixes": [
-				"@typescript-eslint"
-			]
 		}
 	],
 	"platformAutomerge": true,
