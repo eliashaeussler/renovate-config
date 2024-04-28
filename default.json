@@ -57,7 +57,7 @@
 			"matchManagers": [
 				"composer"
 			],
-			"matchPackageNames": [
+			"matchDepNames": [
 				"php"
 			],
 			"rangeStrategy": "widen"
