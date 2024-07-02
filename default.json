@@ -90,6 +90,8 @@
 			":automergeDisabled",
 			":automergePr"
 		],
+		"commitMessagePrefix": "[SECURITY]",
+		"commitMessageSuffix": null,
 		"rangeStrategy": "replace"
 	}
 }
