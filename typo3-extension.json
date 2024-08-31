@@ -13,15 +13,13 @@
 		},
 		{
 			"description": "Group TYPO3 CMS dependencies",
-			"matchPackagePrefixes": [
-				"typo3/cms-"
-			],
-			"excludePackageNames": [
-				"typo3/cms-cli",
-				"typo3/cms-composer-installers"
+			"matchPackageNames": [
+				"typo3/cms-**",
+				"!typo3/cms-cli",
+				"!typo3/cms-composer-installers"
 			],
 			"groupName": "TYPO3 CMS",
-			"fetchReleaseNotes": false
+			"fetchChangeLogs": "off"
 		},
 		{
 			"description": "Disable Renovate for all fixture extensions used in functional tests",
@@ -42,7 +40,7 @@
 				".github/workflows/release.yaml"
 			],
 			"matchManagers": [
-				"regex"
+				"custom.regex"
 			],
 			"matchDepNames": [
 				"php"

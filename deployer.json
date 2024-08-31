@@ -33,7 +33,7 @@
 				".github/workflows/deploy.yaml"
 			],
 			"matchManagers": [
-				"regex"
+				"custom.regex"
 			],
 			"matchDepNames": [
 				"php"
