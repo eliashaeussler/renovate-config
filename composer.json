@@ -30,6 +30,6 @@
 		"lint:composer:fix": "@composer normalize",
 		"lint:editorconfig": "ec",
 		"lint:editorconfig:fix": "@lint:editorconfig --fix",
-		"validate-config": "docker-compose run --rm validate"
+		"validate-config": "docker compose run --rm validate"
 	}
 }
