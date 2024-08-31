@@ -1,6 +1,11 @@
 services:
   validate:
     image: renovate/renovate
-    command: ['renovate-config-validator', 'default.json', 'deployer.json', 'typo3-extension.json']
+    command:
+      - 'renovate-config-validator'
+      - '--strict'
+      - 'default.json'
+      - 'deployer.json'
+      - 'typo3-extension.json'
     volumes:
       - ./:/usr/src/app
