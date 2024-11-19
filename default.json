@@ -82,6 +82,13 @@
 				"actions/upload-artifact"
 			],
 			"groupName": "GitHub artifact actions"
+		},
+		{
+			"description": "Group Doctrine packages",
+			"matchPackageNames": [
+				"doctrine/**"
+			],
+			"groupName": "Doctrine packages"
 		}
 	],
 	"platformAutomerge": true,
