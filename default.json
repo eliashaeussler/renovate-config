@@ -31,7 +31,7 @@
 				"^\\.github/workflows/.+\\.yaml$"
 			],
 			"matchStrings": [
-				"php-version: '?(?<currentValue>\\d\\.\\d\\S*)'?"
+				"php-version: '?(?<currentValue>\\d\\.\\d\\S*)'?(?! \\# ?renovate-ignore)"
 			],
 			"datasourceTemplate": "docker",
 			"depNameTemplate": "php",
