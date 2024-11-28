@@ -67,7 +67,8 @@
 			],
 			"ignoreUnstable": false,
 			"matchManagers": [
-				"composer"
+				"composer",
+				"custom.regex"
 			],
 			"matchDepNames": [
 				"php"
