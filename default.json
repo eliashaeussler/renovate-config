@@ -43,7 +43,7 @@
 				"^\\.ddev/config\\.yaml$"
 			],
 			"matchStrings": [
-				"php_version: \"(?<currentValue>\\d\\.\\d\\S*)\""
+				"[^ ]php_version: \"(?<currentValue>\\d\\.\\d)\""
 			],
 			"datasourceTemplate": "docker",
 			"depNameTemplate": "php",
