@@ -36,6 +36,18 @@
 			"datasourceTemplate": "docker",
 			"depNameTemplate": "php",
 			"versioningTemplate": "docker"
+		},
+		{
+			"customType": "regex",
+			"fileMatch": [
+				"^\\.ddev/config\\.yaml$"
+			],
+			"matchStrings": [
+				"php_version: \"(?<currentValue>\\d\\.\\d\\S*)\""
+			],
+			"datasourceTemplate": "docker",
+			"depNameTemplate": "php",
+			"versioningTemplate": "docker"
 		}
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "unresolved",
