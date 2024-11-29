@@ -16,6 +16,7 @@ provide support and don't accept pull requests for this repo.
 
 * [`default.json`](default.json) *– base configuration for all projects*
 * [`deployer.json`](deployer.json) *– configuration for projects using [Deployer](https://deployer.org/)*
+* [`symfony-project.json`](symfony-project.json) *– configuration for [Symfony](https://symfony.com/) projects*
 * [`typo3-extension.json`](typo3-extension.json) *– configuration for [TYPO3 CMS](https://typo3.org/) extensions*
 
 ## ⚡ Usage

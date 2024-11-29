@@ -6,6 +6,7 @@ services:
       - '--strict'
       - 'default.json'
       - 'deployer.json'
+      - 'symfony-project.json'
       - 'typo3-extension.json'
     volumes:
       - ./:/usr/src/app
