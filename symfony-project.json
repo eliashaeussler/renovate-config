@@ -1,0 +1,29 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"customManagers": [
+		{
+			"customType": "regex",
+			"fileMatch": [
+				"^composer\\.json$"
+			],
+			"matchStrings": [
+				"\"require\": \"(?<currentValue>[^\"]+)\""
+			],
+			"datasourceTemplate": "packagist",
+			"depNameTemplate": "symfony/symfony",
+			"versioningTemplate": "composer"
+		}
+	],
+	"packageRules": [
+		{
+			"description": "Disable automerge for Symfony framework updates since they may require additional work",
+			"extends": [
+				":automergeDisabled"
+			],
+			"matchDepNames": [
+				"symfony/**"
+			]
+		}
+	],
+	"rangeStrategy": "bump"
+}
