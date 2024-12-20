@@ -33,7 +33,7 @@
 			"matchStrings": [
 				"php-version: '?(?<currentValue>\\d\\.\\d\\S*)'?"
 			],
-			"datasourceTemplate": "github-releases",
+			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php/php-src",
 			"versioningTemplate": "regex:^php-(?<major>\\d+)\\.(?<minor>\\d+)"
 		},
