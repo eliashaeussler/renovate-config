@@ -33,9 +33,9 @@
 			"matchStrings": [
 				"php-version: '?(?<currentValue>\\d\\.\\d\\S*)'?"
 			],
-			"datasourceTemplate": "docker",
-			"depNameTemplate": "php",
-			"versioningTemplate": "docker"
+			"datasourceTemplate": "github-releases",
+			"depNameTemplate": "php/php-src",
+			"versioningTemplate": "regex:^php-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"
 		},
 		{
 			"customType": "regex",
@@ -45,9 +45,9 @@
 			"matchStrings": [
 				"[^ ]php_version: \"(?<currentValue>\\d\\.\\d)\""
 			],
-			"datasourceTemplate": "docker",
-			"depNameTemplate": "php",
-			"versioningTemplate": "docker"
+			"datasourceTemplate": "github-releases",
+			"depNameTemplate": "php/php-src",
+			"versioningTemplate": "regex:^php-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"
 		}
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "unresolved",
@@ -61,6 +61,7 @@
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
+			"groupName": "PHP",
 			"description": "Handle PHP requirement specifically",
 			"extends": [
 				":automergeDisabled"
@@ -71,11 +72,13 @@
 				"custom.regex"
 			],
 			"matchDepNames": [
-				"php"
+				"php",
+				"php/php-src"
 			],
 			"rangeStrategy": "widen"
 		},
 		{
+			"groupName": "PHP",
 			"description": "Override commit message for PHP version updates in GitHub workflows",
 			"commitMessageTopic": "{{{depName}}}",
 			"matchFileNames": [
@@ -85,23 +88,23 @@
 				"custom.regex"
 			],
 			"matchDepNames": [
-				"php"
+				"php/php-src"
 			]
 		},
 		{
+			"groupName": "GitHub artifact actions",
 			"description": "Group GitHub artifact actions",
 			"matchDepNames": [
 				"actions/download-artifact",
 				"actions/upload-artifact"
-			],
-			"groupName": "GitHub artifact actions"
+			]
 		},
 		{
+			"groupName": "Doctrine packages",
 			"description": "Group Doctrine packages",
 			"matchPackageNames": [
 				"doctrine/**"
-			],
-			"groupName": "Doctrine packages"
+			]
 		}
 	],
 	"platformAutomerge": true,

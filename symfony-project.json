@@ -19,6 +19,7 @@
 	],
 	"packageRules": [
 		{
+			"groupName": "Symfony",
 			"description": "Disable automerge for Symfony framework updates since they may require additional work",
 			"extends": [
 				":automergeDisabled"
