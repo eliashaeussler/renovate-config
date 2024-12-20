@@ -35,7 +35,7 @@
 			],
 			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php/php-src",
-			"extractVersionTemplate": "^php-(?<version>.*)$"
+			"extractVersionTemplate": "^php-(?<version>\\d+\\.\\d+)"
 		},
 		{
 			"customType": "regex",
@@ -47,7 +47,7 @@
 			],
 			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php/php-src",
-			"extractVersionTemplate": "^php-(?<version>.*)$"
+			"extractVersionTemplate": "^php-(?<version>\\d+\\.\\d+)"
 		}
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "unresolved",
