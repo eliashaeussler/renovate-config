@@ -12,13 +12,13 @@
 			"rangeStrategy": "widen"
 		},
 		{
-			"description": "Group TYPO3 CMS dependencies",
+			"groupName": "TYPO3 CMS",
+			"description": "TYPO3 CMS dependencies",
 			"matchPackageNames": [
 				"typo3/cms-**",
 				"!typo3/cms-cli",
 				"!typo3/cms-composer-installers"
 			],
-			"groupName": "TYPO3 CMS",
 			"fetchChangeLogs": "off"
 		},
 		{
@@ -43,7 +43,7 @@
 				"custom.regex"
 			],
 			"matchDepNames": [
-				"php"
+				"php/php-src"
 			]
 		}
 	]

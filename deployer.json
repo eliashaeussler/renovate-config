@@ -25,6 +25,7 @@
 	],
 	"packageRules": [
 		{
+			"groupName": "PHP",
 			"description": "Disable automerge for PHP version updates in GitHub deploy workflow",
 			"extends": [
 				":automergeDisabled"
@@ -36,7 +37,7 @@
 				"custom.regex"
 			],
 			"matchDepNames": [
-				"php"
+				"php/php-src"
 			]
 		}
 	]
