@@ -34,8 +34,9 @@
 				"php-version: '?(?<currentValue>\\d+\\.\\d+)'?"
 			],
 			"datasourceTemplate": "github-tags",
-			"depNameTemplate": "php/php-src",
-			"extractVersionTemplate": "^php-(?<version>\\d+\\.\\d+)"
+			"depNameTemplate": "php",
+			"extractVersionTemplate": "^php-(?<version>\\d+\\.\\d+)",
+			"packageNameTemplate": "php/php-src"
 		},
 		{
 			"customType": "regex",
@@ -46,8 +47,9 @@
 				"[^ ]php_version: \"(?<currentValue>\\d+\\.\\d+)\""
 			],
 			"datasourceTemplate": "github-tags",
-			"depNameTemplate": "php/php-src",
-			"extractVersionTemplate": "^php-(?<version>\\d+\\.\\d+)"
+			"depNameTemplate": "php",
+			"extractVersionTemplate": "^php-(?<version>\\d+\\.\\d+)",
+			"packageNameTemplate": "php/php-src"
 		}
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "unresolved",
@@ -72,8 +74,7 @@
 				"custom.regex"
 			],
 			"matchDepNames": [
-				"php",
-				"php/php-src"
+				"php"
 			],
 			"rangeStrategy": "widen"
 		},
@@ -88,7 +89,7 @@
 				"custom.regex"
 			],
 			"matchDepNames": [
-				"php/php-src"
+				"php"
 			]
 		},
 		{
