@@ -31,7 +31,7 @@
 				"^\\.github/workflows/.+\\.yaml$"
 			],
 			"matchStrings": [
-				"php-version: '?(?<currentValue>\\d\\.\\d\\S*)'?"
+				"php-version: '?(?<currentValue>\\d+\\.\\d+)'?"
 			],
 			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php/php-src",
@@ -43,11 +43,11 @@
 				"^\\.ddev/config\\.yaml$"
 			],
 			"matchStrings": [
-				"[^ ]php_version: \"(?<currentValue>\\d\\.\\d)\""
+				"[^ ]php_version: \"(?<currentValue>\\d+\\.\\d+)\""
 			],
-			"datasourceTemplate": "github-releases",
+			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php/php-src",
-			"versioningTemplate": "regex:^php-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"
+			"versioningTemplate": "regex:^php-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)$"
 		}
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "unresolved",
