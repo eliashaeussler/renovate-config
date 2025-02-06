@@ -26,7 +26,8 @@
 			],
 			"matchDepNames": [
 				"symfony/**"
-			]
+			],
+			"rangeStrategy": "auto"
 		}
 	]
 }
