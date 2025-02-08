@@ -111,7 +111,7 @@
 			]
 		},
 		{
-			"groupName": "PHPUnit packages",
+			"groupName": "PHPUnit",
 			"description": "Group PHPUnit packages",
 			"matchDatasources": [
 				"packagist"
