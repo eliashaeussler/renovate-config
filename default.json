@@ -120,6 +120,18 @@
 				"phpunit/**",
 				"sebastian/**"
 			]
+		},
+		{
+			"groupName": "Rector packages",
+			"description": "Group Rector packages",
+			"matchDatasources": [
+				"packagist"
+			],
+			"matchPackageNames": [
+				"eliashaeussler/rector-config",
+				"rector/**",
+				"ssch/typo3-rector"
+			]
 		}
 	],
 	"platformAutomerge": true,
