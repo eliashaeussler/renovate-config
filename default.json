@@ -103,8 +103,22 @@
 		{
 			"groupName": "Doctrine packages",
 			"description": "Group Doctrine packages",
+			"matchDatasources": [
+				"packagist"
+			],
 			"matchPackageNames": [
 				"doctrine/**"
+			]
+		},
+		{
+			"groupName": "PHPUnit packages",
+			"description": "Group PHPUnit packages",
+			"matchDatasources": [
+				"packagist"
+			],
+			"matchPackageNames": [
+				"phpunit/**",
+				"sebastian/**"
 			]
 		}
 	],
