@@ -132,6 +132,17 @@
 				"rector/**",
 				"ssch/typo3-rector"
 			]
+		},
+		{
+			"groupName": "Tailwind CSS",
+			"description": "Group Tailwind CSS packages",
+			"matchDatasources": [
+				"npm"
+			],
+			"matchPackageNames": [
+				"tailwindcss",
+				"@tailwindcss/**"
+			]
 		}
 	],
 	"platformAutomerge": true,
