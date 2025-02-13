@@ -143,6 +143,16 @@
 				"tailwindcss",
 				"@tailwindcss/**"
 			]
+		},
+		{
+			"groupName": "Twig",
+			"description": "Group Twig packages",
+			"matchDatasources": [
+				"packagist"
+			],
+			"matchPackageNames": [
+				"twig/**"
+			]
 		}
 	],
 	"platformAutomerge": true,
