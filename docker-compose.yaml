@@ -8,5 +8,6 @@ services:
       - 'deployer.json'
       - 'symfony-project.json'
       - 'typo3-extension.json'
+      - 'typo3-project.json'
     volumes:
       - ./:/usr/src/app
