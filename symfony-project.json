@@ -6,8 +6,8 @@
 	"customManagers": [
 		{
 			"customType": "regex",
-			"fileMatch": [
-				"^composer\\.json$"
+			"managerFilePatterns": [
+				"/^composer\\.json$/"
 			],
 			"matchStrings": [
 				"\"require\": \"(?<currentValue>[^\"]+)\""

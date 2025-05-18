@@ -12,8 +12,8 @@
 	"customManagers": [
 		{
 			"customType": "regex",
-			"fileMatch": [
-				"^\\.github/workflows/deploy\\.yaml$"
+			"managerFilePatterns": [
+				"/^\\.github/workflows/deploy\\.yaml$/"
 			],
 			"matchStrings": [
 				"deployer-version: '(?<currentValue>[^']+)'"

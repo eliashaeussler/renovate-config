@@ -27,8 +27,8 @@
 	"customManagers": [
 		{
 			"customType": "regex",
-			"fileMatch": [
-				"^\\.github/workflows/.+\\.yaml$"
+			"managerFilePatterns": [
+				"/^\\.github/workflows/.+\\.yaml$/"
 			],
 			"matchStrings": [
 				"php-version: '?(?<currentValue>\\d+\\.\\d+)'?"
@@ -40,8 +40,8 @@
 		},
 		{
 			"customType": "regex",
-			"fileMatch": [
-				"^\\.ddev/config\\.yaml$"
+			"managerFilePatterns": [
+				"/^\\.ddev/config\\.yaml$/"
 			],
 			"matchStrings": [
 				"[^ ]php_version: \"(?<currentValue>\\d+\\.\\d+)\""
