@@ -1,0 +1,48 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"composerIgnorePlatformReqs": [
+		"ext-intl"
+	],
+	"lockFileMaintenance": {
+		"automerge": false
+	},
+	"packageRules": [
+		{
+			"description": "Update all production dependencies in range only",
+			"matchDepTypes": [
+				"require"
+			],
+			"rangeStrategy": "in-range-only"
+		},
+		{
+			"description": "Pin all development dependencies",
+			"matchDepTypes": [
+				"require-dev"
+			],
+			"rangeStrategy": "pin"
+		},
+		{
+			"groupName": "TYPO3 CMS",
+			"description": "TYPO3 CMS dependencies",
+			"matchPackageNames": [
+				"typo3/cms-**",
+				"!typo3/cms-cli",
+				"!typo3/cms-composer-installers"
+			],
+			"extends": [
+				":automergeDisabled"
+			],
+			"fetchChangeLogs": "off"
+		},
+		{
+			"description": "Disable automerge for PHP version updates",
+			"extends": [
+				":automergeDisabled"
+			],
+			"commitMessageTopic": "{{{depName}}}",
+			"matchDepNames": [
+				"php"
+			]
+		}
+	]
+}
