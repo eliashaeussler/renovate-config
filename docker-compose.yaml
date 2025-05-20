@@ -5,6 +5,7 @@ services:
       - 'renovate-config-validator'
       - '--strict'
       - 'default.json'
+      - 'ddev.json'
       - 'deployer.json'
       - 'symfony-project.json'
       - 'typo3-extension.json'
