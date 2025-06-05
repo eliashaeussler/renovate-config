@@ -8,11 +8,11 @@
 	},
 	"packageRules": [
 		{
-			"description": "Update all production dependencies in range only",
+			"description": "Bump all production dependencies",
 			"matchDepTypes": [
 				"require"
 			],
-			"rangeStrategy": "in-range-only"
+			"rangeStrategy": "bump"
 		},
 		{
 			"description": "Pin all development dependencies",
