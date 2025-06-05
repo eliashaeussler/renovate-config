@@ -12,6 +12,9 @@
 			"matchDepTypes": [
 				"require"
 			],
+			"extends": [
+				":combinePatchMinorReleases"
+			],
 			"rangeStrategy": "bump"
 		},
 		{
