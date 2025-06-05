@@ -11,14 +11,11 @@
 	},
 	"packageRules": [
 		{
-			"description": "Bump all production dependencies",
+			"description": "Update or replace production dependencies",
 			"matchDepTypes": [
 				"require"
 			],
-			"extends": [
-				":combinePatchMinorReleases"
-			],
-			"rangeStrategy": "bump"
+			"rangeStrategy": "update-lockfile"
 		},
 		{
 			"description": "Pin all development dependencies",
