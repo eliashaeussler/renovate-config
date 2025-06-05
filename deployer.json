@@ -19,7 +19,7 @@
 				"deployer-version: '(?<currentValue>[^']+)'"
 			],
 			"datasourceTemplate": "custom.deployer",
-			"depNameTemplate": "deployer",
+			"depNameTemplate": "deployer/deployer",
 			"versioningTemplate": "composer"
 		}
 	],

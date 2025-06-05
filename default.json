@@ -4,6 +4,7 @@
 		":automergeBranch",
 		":automergeMinor",
 		":combinePatchMinorReleases",
+		":configMigration",
 		":dependencyDashboard",
 		":enableVulnerabilityAlertsWithLabel(security)",
 		":ignoreModulesAndTests",
@@ -23,7 +24,6 @@
 	"commitMessagePrefix": "[TASK]",
 	"commitMessageTopic": "{{depName}}",
 	"composerIgnorePlatformReqs": null,
-	"configMigration": true,
 	"customManagers": [
 		{
 			"customType": "regex",
@@ -155,7 +155,6 @@
 			]
 		}
 	],
-	"platformAutomerge": true,
 	"vulnerabilityAlerts": {
 		"extends": [
 			":automergeDisabled",
