@@ -68,7 +68,6 @@
 			"extends": [
 				":automergeDisabled"
 			],
-			"ignoreUnstable": false,
 			"matchManagers": [
 				"composer",
 				"custom.regex"
