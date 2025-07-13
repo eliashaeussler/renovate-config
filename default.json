@@ -35,7 +35,7 @@
 			],
 			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php",
-			"versioningTemplate": "regex:^php-(?<major>\\d+)\\.(?<minor>\\d+)\\.\\d+(?<prerelease>[^.-]+)?$",
+			"extractVersionTemplate": "^php-(?<version>\\d+\\.\\d+)\\.\\d+$",
 			"packageNameTemplate": "php/php-src"
 		},
 		{
@@ -48,7 +48,7 @@
 			],
 			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php",
-			"versioningTemplate": "regex:^php-(?<major>\\d+)\\.(?<minor>\\d+)\\.\\d+(?<prerelease>[^.-]+)?$",
+			"extractVersionTemplate": "^php-(?<version>\\d+\\.\\d+)\\.\\d+$",
 			"packageNameTemplate": "php/php-src"
 		}
 	],
