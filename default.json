@@ -152,6 +152,12 @@
 			"matchPackageNames": [
 				"twig/**"
 			]
+		},
+		{
+			"groupName": "Stylelint",
+			"extends": [
+				"packages:stylelint"
+			]
 		}
 	],
 	"vulnerabilityAlerts": {
