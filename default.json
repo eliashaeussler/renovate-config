@@ -41,17 +41,6 @@
 		{
 			"customType": "regex",
 			"managerFilePatterns": [
-				"/^\\.github/workflows/.+\\.yaml$/"
-			],
-			"matchStrings": [
-				"node-version: '?(?<currentValue>\\d+)'?"
-			],
-			"datasourceTemplate": "node-version",
-			"depNameTemplate": "node"
-		},
-		{
-			"customType": "regex",
-			"managerFilePatterns": [
 				"/^\\.ddev/config\\.yaml$/"
 			],
 			"matchStrings": [
@@ -61,17 +50,6 @@
 			"depNameTemplate": "php",
 			"extractVersionTemplate": "^php-(?<version>\\d+\\.\\d+)\\.\\d+$",
 			"packageNameTemplate": "php/php-src"
-		},
-		{
-			"customType": "regex",
-			"managerFilePatterns": [
-				"/^\\.ddev/config\\.yaml$/"
-			],
-			"matchStrings": [
-				"[^ ]nodejs_version: \"(?<currentValue>\\d+)\""
-			],
-			"datasourceTemplate": "node-version",
-			"depNameTemplate": "node"
 		}
 	],
 	"dependencyDashboardOSVVulnerabilitySummary": "unresolved",
