@@ -4,6 +4,7 @@ services:
     command:
       - 'renovate-config-validator'
       - '--strict'
+      - 'composer-plugin.json'
       - 'default.json'
       - 'ddev.json'
       - 'deployer.json'
