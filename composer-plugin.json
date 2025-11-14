@@ -1,0 +1,21 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"packageRules": [
+		{
+			"description": "Disable automerge for major and minor Composer updates",
+			"extends": [
+				":automergeDisabled"
+			],
+			"matchDatasources": [
+				"packagist"
+			],
+			"matchPackageNames": [
+				"composer/composer"
+			],
+			"matchUpdateTypes": [
+				"major",
+				"minor"
+			]
+		}
+	]
+}

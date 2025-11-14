@@ -14,6 +14,7 @@ provide support and don't accept pull requests for this repo.
 
 ## 🚢 Config presets
 
+* [`composer-plugin.json`](composer-plugin.json) *– configuration for [Composer](https://getcomposer.org/) plugins*
 * [`default.json`](default.json) *– base configuration for all projects*
 * [`ddev.json`](ddev.json) *– configuration for projects using [DDEV](https://ddev.com/)*
 * [`deployer.json`](deployer.json) *– configuration for projects using [Deployer](https://deployer.org/)*
