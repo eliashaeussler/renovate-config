@@ -46,6 +46,16 @@
 			"matchDepNames": [
 				"php"
 			]
+		},
+		{
+			"description": "Replace PHP version in composer.json",
+			"matchFileNames": [
+				"composer.json"
+			],
+			"matchDepNames": [
+				"php"
+			],
+			"rangeStrategy": "replace"
 		}
 	]
 }
