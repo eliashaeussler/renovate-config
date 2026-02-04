@@ -44,7 +44,8 @@
 				"/^\\.ddev/config\\.yaml$/"
 			],
 			"matchStrings": [
-				"[^ ]php_version: \"(?<currentValue>\\d+\\.\\d+)\""
+				"[^ ]php_version: \"(?<currentValue>\\d+\\.\\d+)\"",
+				"[^ ]webimage_extra_packages: [^\\n]+php(?<currentValue>\\d+\\.\\d+)-"
 			],
 			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php",
