@@ -12,9 +12,7 @@
 		":rebaseStalePrs",
 		":semanticCommitsDisabled",
 		":separateMajorReleases",
-		"group:recommended",
-		"packages:eslint",
-		"packages:stylelint"
+		"group:recommended"
 	],
 	"assignees": [
 		"eliashaeussler"
@@ -152,6 +150,12 @@
 			],
 			"matchPackageNames": [
 				"twig/**"
+			]
+		},
+		{
+			"groupName": "ESLint",
+			"extends": [
+				"packages:eslint"
 			]
 		},
 		{
