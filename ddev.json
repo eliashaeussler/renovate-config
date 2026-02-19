@@ -11,6 +11,29 @@
 			],
 			"datasourceTemplate": "github-releases",
 			"depNameTemplate": "ddev/ddev"
+		},
+		{
+			"customType": "regex",
+			"managerFilePatterns": [
+				"/^\\.ddev/addon-metadata/[^/]+/manifest\\.yaml$/"
+			],
+			"matchStrings": [
+				"repository: (?<depName>[^\\n]+)\\nversion: (?<currentValue>[^\\n]+)"
+			],
+			"datasourceTemplate": "github-tags"
+		}
+	],
+	"packageRules": [
+		{
+			"extends": [
+				":automergeDisabled"
+			],
+			"matchManagers": [
+				"custom.regex"
+			],
+			"matchFileNames": [
+				".ddev/addon-metadata/**"
+			]
 		}
 	]
 }
