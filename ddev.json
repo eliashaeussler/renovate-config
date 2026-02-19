@@ -33,7 +33,8 @@
 			],
 			"matchFileNames": [
 				".ddev/addon-metadata/**"
-			]
+			],
+			"separateMajorMinor": false
 		}
 	]
 }
