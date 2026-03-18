@@ -29,24 +29,12 @@
 				"/^\\.github/workflows/.+\\.yaml$/"
 			],
 			"matchStrings": [
-				"php-version: '?(?<currentValue>\\d+\\.\\d+)'?"
+				"php-version: '?(?<currentValue>\\d+\\.\\d+)'?(?: *# *(?<depType>[^\\n]+))?"
 			],
 			"datasourceTemplate": "github-tags",
 			"depNameTemplate": "php",
+			"depTypeTemplate": "{{#if depType}}{{{depType}}}{{else}}require{{/if}}",
 			"extractVersionTemplate": "^php-(?<version>\\d+\\.\\d+)\\.\\d+$",
-			"packageNameTemplate": "php/php-src"
-		},
-		{
-			"customType": "regex",
-			"managerFilePatterns": [
-				"/^\\.github/workflows/.+\\.yaml$/"
-			],
-			"matchStrings": [
-				"php-version: '?\\d+\\.\\d+'? # *renovate-ignore"
-			],
-			"currentValueTemplate": "0.0.0",
-			"datasourceTemplate": "github-tags",
-			"depNameTemplate": "php",
 			"packageNameTemplate": "php/php-src"
 		},
 		{
@@ -90,6 +78,26 @@
 			"rangeStrategy": "widen"
 		},
 		{
+			"extends": [
+				":disableRenovate"
+			],
+			"matchFileNames": [
+				".github/workflows/**"
+			],
+			"matchManagers": [
+				"custom.regex"
+			],
+			"matchDepNames": [
+				"php"
+			],
+			"matchDepTypes": [
+				"renovate-ignore"
+			]
+		},
+		{
+			"extends": [
+				":enableRenovate"
+			],
 			"groupName": "PHP",
 			"description": "Override commit message for PHP version updates in GitHub workflows",
 			"commitMessageTopic": "{{{depName}}}",
@@ -101,23 +109,10 @@
 			],
 			"matchDepNames": [
 				"php"
+			],
+			"matchDepTypes": [
+				"require"
 			]
-		},
-		{
-			"extends": [
-				":disableRenovate"
-			],
-			"description": "Disable ignored PHP version updates in GitHub workflows",
-			"matchFileNames": [
-				".github/workflows/**"
-			],
-			"matchManagers": [
-				"custom.regex"
-			],
-			"matchDepNames": [
-				"php"
-			],
-			"matchCurrentValue": "0.0.0"
 		},
 		{
 			"groupName": "GitHub artifact actions",
