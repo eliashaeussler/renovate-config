@@ -46,7 +46,8 @@
 			],
 			"currentValueTemplate": "0.0.0",
 			"datasourceTemplate": "github-tags",
-			"depNameTemplate": "php"
+			"depNameTemplate": "php",
+			"packageNameTemplate": "php/php-src"
 		},
 		{
 			"customType": "regex",
