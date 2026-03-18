@@ -104,6 +104,9 @@
 			]
 		},
 		{
+			"extends": [
+				":disableRenovate"
+			],
 			"description": "Disable ignored PHP version updates in GitHub workflows",
 			"matchFileNames": [
 				".github/workflows/**"
