@@ -39,6 +39,18 @@
 		{
 			"customType": "regex",
 			"managerFilePatterns": [
+				"/^\\.github/workflows/.+\\.yaml$/"
+			],
+			"matchStrings": [
+				"php-version: '?\\d+\\.\\d+'? # *renovate-ignore"
+			],
+			"currentValueTemplate": "0.0.0",
+			"datasourceTemplate": "github-tags",
+			"depNameTemplate": "php"
+		},
+		{
+			"customType": "regex",
+			"managerFilePatterns": [
 				"/^\\.ddev/config\\.yaml$/"
 			],
 			"matchStrings": [
@@ -89,6 +101,19 @@
 			"matchDepNames": [
 				"php"
 			]
+		},
+		{
+			"description": "Disable ignored PHP version updates in GitHub workflows",
+			"matchFileNames": [
+				".github/workflows/**"
+			],
+			"matchManagers": [
+				"custom.regex"
+			],
+			"matchDepNames": [
+				"php"
+			],
+			"matchCurrentValue": "0.0.0"
 		},
 		{
 			"groupName": "GitHub artifact actions",
