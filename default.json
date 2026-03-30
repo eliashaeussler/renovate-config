@@ -123,6 +123,14 @@
 			]
 		},
 		{
+			"groupName": "GitHub pages actions",
+			"description": "Group GitHub pages actions",
+			"matchDepNames": [
+				"actions/configure-pages",
+				"actions/deploy-pages"
+			]
+		},
+		{
 			"groupName": "Doctrine packages",
 			"description": "Group Doctrine packages",
 			"matchDatasources": [
