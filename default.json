@@ -195,6 +195,14 @@
 			"extends": [
 				"packages:stylelint"
 			]
+		},
+		{
+			"extends": [
+				":automergeDisabled"
+			],
+			"matchManagers": [
+				"renovate-config"
+			]
 		}
 	],
 	"vulnerabilityAlerts": {
