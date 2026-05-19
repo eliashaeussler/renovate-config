@@ -209,6 +209,15 @@
 				"github-actions"
 			],
 			"pinDigests": true
+		},
+		{
+			"matchDepNames": [
+				"ramsey/composer-install"
+			],
+			"matchDepTypes": [
+				"action"
+			],
+			"overrideDatasource": "github-digest"
 		}
 	],
 	"vulnerabilityAlerts": {
