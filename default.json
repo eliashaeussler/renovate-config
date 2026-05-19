@@ -203,6 +203,12 @@
 			"matchManagers": [
 				"renovate-config"
 			]
+		},
+		{
+			"matchManagers": [
+				"github-actions"
+			],
+			"pinDigests": true
 		}
 	],
 	"vulnerabilityAlerts": {
