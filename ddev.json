@@ -7,7 +7,8 @@
 				"/^\\.github/workflows/.+\\.yaml$/"
 			],
 			"matchStrings": [
-				"uses: ddev/github-action-setup-ddev@[^\\n]+\\n\\s+with:\\n\\s+version: '(?<currentValue>[^']+)'"
+				"uses: ddev/github-action-setup-ddev@[^\\n]+\\n\\s+with:\\n\\s+version: '(?<currentValue>[^']+)'",
+				"ddev-version: '(?<currentValue>[^']+)'"
 			],
 			"datasourceTemplate": "github-releases",
 			"depNameTemplate": "ddev/ddev"
