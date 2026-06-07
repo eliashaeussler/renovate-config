@@ -22,14 +22,27 @@
 		"sort-packages": true
 	},
 	"scripts": {
-		"lint": [
-			"@lint:composer:fix",
-			"@lint:editorconfig:fix"
+		"check": [
+			"@check:style"
 		],
-		"lint:composer": "@lint:composer:fix --dry-run",
-		"lint:composer:fix": "@composer normalize",
-		"lint:editorconfig": "ec",
-		"lint:editorconfig:fix": "@lint:editorconfig --fix",
+		"check:style": [
+			"@check:style:composer",
+			"@check:style:editorconfig"
+		],
+		"check:style:composer": "@fix:composer --dry-run",
+		"check:style:editorconfig": "ec",
+		"ci": [
+			"@composer validate --strict",
+			"@composer audit",
+			"@check",
+			"@validate-config"
+		],
+		"fix": [
+			"@fix:composer",
+			"@fix:editorconfig"
+		],
+		"fix:composer": "@composer normalize",
+		"fix:editorconfig": "@check:style:editorconfig --fix",
 		"validate-config": "docker compose run --rm validate"
 	}
 }
