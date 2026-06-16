@@ -2,7 +2,7 @@
 
 # Renovate config
 
-[![CGL](https://github.com/eliashaeussler/renovate-config/actions/workflows/cgl.yaml/badge.svg)](https://github.com/eliashaeussler/renovate-config/actions/workflows/cgl.yaml)
+[![CI](https://github.com/eliashaeussler/renovate-config/actions/workflows/ci.yaml/badge.svg)](https://github.com/eliashaeussler/renovate-config/actions/workflows/ci.yaml)
 [![Release](https://github.com/eliashaeussler/renovate-config/actions/workflows/release.yaml/badge.svg)](https://github.com/eliashaeussler/renovate-config/actions/workflows/release.yaml)
 [![License](https://img.shields.io/github/license/eliashaeussler/renovate-config)](LICENSE)
 
