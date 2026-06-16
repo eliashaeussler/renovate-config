@@ -185,6 +185,17 @@
 			]
 		},
 		{
+			"groupName": "Babel",
+			"description": "Group Babel packages",
+			"matchDatasources": [
+				"npm"
+			],
+			"matchPackageNames": [
+				"@babel/**",
+				"babel-"
+			]
+		},
+		{
 			"groupName": "ESLint",
 			"extends": [
 				"packages:eslint"
