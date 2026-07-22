@@ -196,6 +196,16 @@
 			]
 		},
 		{
+			"groupName": "Guzzle",
+			"description": "Group Guzzle packages",
+			"matchDatasources": [
+				"packagist"
+			],
+			"matchPackageNames": [
+				"guzzlehttp/**"
+			]
+		},
+		{
 			"groupName": "ESLint",
 			"extends": [
 				"packages:eslint"
