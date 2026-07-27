@@ -239,6 +239,22 @@
 				"action"
 			],
 			"overrideDatasource": "github-digest"
+		},
+		{
+			"matchDepNames": [
+				"ghcr.io/l3montree-dev/devguard",
+				"ghcr.io/l3montree-dev/devguard/scanner",
+				"ghcr.io/l3montree-dev/devguard/vulndb/v1"
+			],
+			"changelogUrl": "https://github.com/l3montree-dev/devguard/blob/main/CHANGELOG.md",
+			"sourceUrl": "https://github.com/l3montree-dev/devguard"
+		},
+		{
+			"matchDepNames": [
+				"ghcr.io/l3montree-dev/devguard-web"
+			],
+			"changelogUrl": "https://github.com/l3montree-dev/devguard-web/blob/main/CHANGELOG.md",
+			"sourceUrl": "https://github.com/l3montree-dev/devguard-web"
 		}
 	],
 	"vulnerabilityAlerts": {
