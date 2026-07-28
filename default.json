@@ -60,6 +60,7 @@
 		],
 		"commitMessageAction": "Update all dependencies"
 	},
+	"onboardingPrTitle": "[TASK] Configure Renovate",
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
 		{
