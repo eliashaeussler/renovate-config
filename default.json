@@ -60,6 +60,7 @@
 		],
 		"commitMessageAction": "Update all dependencies"
 	},
+	"minimumReleaseAge": "3 days",
 	"onboardingPrTitle": "[TASK] Configure Renovate",
 	"osvVulnerabilityAlerts": true,
 	"packageRules": [
@@ -240,6 +241,12 @@
 				"action"
 			],
 			"overrideDatasource": "github-digest"
+		},
+		{
+			"matchDepNames": [
+				"eliashaeussler/**"
+			],
+			"minimumReleaseAge": "0 days"
 		}
 	],
 	"vulnerabilityAlerts": {
