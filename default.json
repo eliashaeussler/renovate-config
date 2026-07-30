@@ -12,7 +12,8 @@
 		":rebaseStalePrs",
 		":semanticCommitsDisabled",
 		":separateMajorReleases",
-		"group:recommended"
+		"group:recommended",
+		"security:openssf-scorecard"
 	],
 	"assignees": [
 		"eliashaeussler"
