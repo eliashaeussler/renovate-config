@@ -1,0 +1,14 @@
+default.json
+  h_a1c258d8beeba3 251-259
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "181b0e7f6c34c6cef62192c258b271a7c41675c3",
+  "prompts": {},
+  "humans": {
+    "h_a1c258d8beeba3": {
+      "author": "Elias Häußler <elias@haeussler.dev>"
+    }
+  }
+}
