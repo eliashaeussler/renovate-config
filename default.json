@@ -248,6 +248,15 @@
 				"eliashaeussler/**"
 			],
 			"minimumReleaseAge": "0 days"
+		},
+		{
+			"extends": [
+				":automergeDisabled"
+			],
+			"matchCurrentVersion": "/^0/",
+			"matchUpdateTypes": [
+				"minor"
+			]
 		}
 	],
 	"vulnerabilityAlerts": {
