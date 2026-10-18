@@ -253,7 +253,7 @@
 			"extends": [
 				":automergeDisabled"
 			],
-			"matchCurrentVersion": "/^0/",
+			"matchCurrentVersion": "/^v?0/",
 			"matchUpdateTypes": [
 				"minor"
 			]
